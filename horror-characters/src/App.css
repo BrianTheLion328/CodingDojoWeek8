@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  margin: 40px;
+}
+.input {
+  width: 60%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  width: 300px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  display: inline-block;
+  margin: 5px;
+  background-color: pink;
+}
+.listItem {
+  margin: 15px 10px;
+}
+.submitButton {
+  padding: 10px;
+  margin: 15px 5px;
+  background-color: skyblue;
+}
