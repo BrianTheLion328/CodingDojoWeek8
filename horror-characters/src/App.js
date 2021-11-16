@@ -60,7 +60,7 @@ function App() {
 
     {
       charArray.map( (character, index) => {
-        return <List charArray={charArray} deleteTodo={deleteTodo} key={index} character={character} />
+        return <List key={index} character={character} />
       })
     }
 
