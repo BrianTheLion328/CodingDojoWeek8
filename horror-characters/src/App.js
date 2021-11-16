@@ -14,6 +14,7 @@ function App() {
     e.preventDefault()
 
     const character = {
+      id: Date.now(),
       name: name,
       weapon: weapon,
       outfit: outfit,
@@ -30,6 +31,12 @@ function App() {
     setOutfit("")
     setVictimCount(0)
     setHome("")
+  }
+
+  function deleteCharacter(id){
+    const deleteArray = [...charArray].filter((char) => char.id !== id)
+
+    setCharArray(deleteArray)
   }
 
   return (
@@ -60,7 +67,11 @@ function App() {
 
     {
       charArray.map( (character, index) => {
-        return <List key={index} character={character} />
+        return (
+        <div className="newTodo">
+        <List key={index} character={character} />
+        <span className="deleteBtn" onClick={() => deleteCharacter(character.id)}> DELETE </span>
+        </div>)
       })
     }
 
