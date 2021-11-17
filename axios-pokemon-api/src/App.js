@@ -7,7 +7,11 @@ function App() {
 
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon?limit=807")
-      .then(response => setAllPokemon(response.data.results))
+      .then(response => {setAllPokemon(response.data.results)})
+      .then(console.log("Pokemon adding complete!"))
+      .catch((error) => {
+        console.error(error)
+      })
   }, [])
 
   return (
