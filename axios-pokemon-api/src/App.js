@@ -11,6 +11,7 @@ function App() {
       .then(console.log("Pokemon adding complete!"))
       .catch((error) => {
         console.error(error)
+        console.log("Something went wrong!")
       })
   }, [])
 
