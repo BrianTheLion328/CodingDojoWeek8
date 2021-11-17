@@ -62,7 +62,7 @@ function App() {
          <label>Enter a Home</label>
          <input type="text" value={ home } onChange={(e) => setHome(e.target.value)} />
        </div>
-       <input className="submitButton" type="submit" value="Add Character"/>
+       <input className="submitBtn" type="submit" value="Add Character"/>
      </form>
 
     {
