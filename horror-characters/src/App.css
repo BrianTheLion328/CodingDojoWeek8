@@ -32,8 +32,12 @@
   display: flex;
   flex-direction: column;
 }
+.allTodos{
+  display: flex;
+  flex-direction: row
+}
 .deleteBtn {
-  width: 15%;
+  width: 33%;
   margin: 0px 7px 7px 7px;
   padding: 4px 0px;
   border: 1px solid black;

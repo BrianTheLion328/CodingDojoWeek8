@@ -65,6 +65,7 @@ function App() {
        <input className="submitBtn" type="submit" value="Add Character"/>
      </form>
 
+      <div className="allTodos">
     {
       charArray.map( (character, index) => {
         return (
@@ -74,6 +75,7 @@ function App() {
         </div>)
       })
     }
+      </div>
 
     </div>
   );
