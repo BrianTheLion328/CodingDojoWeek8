@@ -16,7 +16,7 @@ function App() {
         <Home path="/" />
         <Hello path="/hello" />
         <BlueRed path="/hello/blue/red" />
-        <Number path="/:number" />
+        <Number path="/4"/>
       </Router>
     </div>
   );

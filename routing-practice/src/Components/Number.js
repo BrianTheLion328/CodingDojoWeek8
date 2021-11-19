@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from '@reach/router';
+
 
 export default function Number() {
     return (
         <div>
-
+            <h2>The number is: 4</h2>
         </div>
     )
 }

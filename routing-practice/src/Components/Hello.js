@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from '@reach/router';
+
 
 export default function Hello() {
     return (
         <div>
-
+            <h2>The word is: hello</h2>
         </div>
     )
 }
