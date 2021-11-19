@@ -8,16 +8,18 @@ import Home from './Components/Home';
 import Number from './Components/Number';
 
 
-
 function App() {
   return (
     <div className="App">
+      <h2>Hello User!</h2>
+      <div>
       <Router>
         <Home path="/" />
         <Hello path="/hello" />
         <BlueRed path="/hello/blue/red" />
         <Number path="/4"/>
       </Router>
+      </div>
     </div>
   );
 }
