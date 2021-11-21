@@ -3,6 +3,11 @@ const express = require("express")
 const app = express();
 const PORT = 8000
 
+// MIDDLEWARE
+app.use(express.json())
+
+
+// FUNCTION TO CREATE NEW USER
 const createUser = () => {
     const userObj = {
         _id: faker.datatype.uuid(),
@@ -17,6 +22,7 @@ const createUser = () => {
         return userObj;
 }
 
+//FUNCTION TO CREATE NEW COMPANY
 const createCompany = () => {
     const companyObj = {
         _id: faker.datatype.uuid(),
@@ -34,6 +40,7 @@ const createCompany = () => {
     return companyObj;
 }
 
+// FUNCTION TO CREATE NEW USER AND COMPANY AT THE SAME TIME
 const newUserAndCompany = () => {
     const newUser = createUser()
     const newCompany = createCompany()
@@ -42,6 +49,8 @@ const newUserAndCompany = () => {
     return userAndCompany;
 }
 
+
+// ROUTES 
 app.get("/api/users/new", (req, res) => {
     res.send( createUser() )
 })
