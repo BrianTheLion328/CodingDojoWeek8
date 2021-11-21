@@ -1,4 +1,4 @@
-import { Router } from '@reach/Router'
+import { Router } from '@reach/router'
 import './App.css';
 import Form from './Components/Form'
 import Planet from './Components/Planet'
